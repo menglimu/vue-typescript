@@ -1,0 +1,15 @@
+.item{
+  color: pink;
+}
+
+.aaa{
+  .item{
+    color: blue;
+  }
+  color: red;
+}
+.bbb{
+  .item{
+    color: yellow;
+  }
+}

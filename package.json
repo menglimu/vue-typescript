@@ -1,0 +1,68 @@
+{
+  "name": "@cci/cd-components",
+  "version": "1.0.15",
+  "private": false,
+  "types": "types/index.d.ts",
+  "main": "dist/cd-components.umd.js",
+  "description": "前端组件。基于cui和element，使用ts编码",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --name cd-components --target lib ./src/packages/index.ts",
+    "package:custom": "webpack --config ./build/webpack.package.js",
+    "publish:pkg": "npm run package && npm version patch && npm publish"
+  },
+  "dependencies": {
+    "@cci/cp-svg-icon": "^1.0.3",
+    "@cci/cui": "^1.3.1",
+    "axios": "^0.19.2",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-plugin-typescript": "^3.12.0",
+    "@vue/cli-plugin-unit-jest": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.18.2",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "svg-sprite-loader": "^5.0.0",
+    "ts-jest": "^23.0.0",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.12"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "types"
+  ]
+}
